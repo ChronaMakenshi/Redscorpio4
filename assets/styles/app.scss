@@ -1,0 +1,22 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "Orbitron";
+    src:url('../fonts/Orbitron-Regular.ttf'),
+}
+
+@font-face {
+    font-family: "Orbitron-SemiBold";
+    src:url('../fonts/Orbitron-SemiBold.ttf'),
+}
+
+@font-face {
+    font-family: "Roboto";
+    src:url('../fonts/Roboto-Regular.ttf'),
+}
+
+h1 {
+    font-family: Orbitron-SemiBold;
+}
+
