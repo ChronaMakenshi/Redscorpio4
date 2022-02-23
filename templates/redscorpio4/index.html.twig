@@ -5,7 +5,49 @@
 
 {% block body %}
 	<div class="position-relative">
-		<h1 class="display-1 text-white position-absolute top-50 start-50 translate-middle">Redscorpio4</h1>
+		<h1 class="text-white position-absolute top-50 start-50 translate-middle text-shadow">Redscorpio4</h1>
 		<img class="w-100" src="{{ asset('image/Arbre.png') }}" alt="">
 	</div>
-{% endblock %}
+	<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav w-100 d-flex justify-content-around">
+					<li class="nav-item">
+						<a class="nav-link active text-white" aria-current="page" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Last Album</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Remixes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Orignal Track</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="d-flex justify-content-center my-5">
+		<a href="https://redscorpio4.bandcamp.com/music"><img class="me-5 w-50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+		<a href="https://twitter.com/RedScorpio4_"><img class="me-5 w-50" src="{{ asset('image/twitter.svg') }}" alt=""></a>
+		<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" src="{{ asset('image/youtube.svg') }}" alt=""></a>
+		<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" src="{{ asset('image/soundcould.svg') }}" alt=""></a>
+	</div>
+	<div class="position-relative py-5">
+		<img class="w-100 mt-5" src="{{ asset('image/Rectangle 1.png') }}" alt="">
+		<div class="text-white position-absolute top-50 w-reponsive translate-middle-y bg-black">
+			<p>We’re going to talk about a shy, unsure and secretive electronic music composer.</p>
+			<p>RedScorpio4 was born in France in the late 80’s and raised by a musician family, listening to punk, rock, metal and celtic music. They got quickly a real passion for electronic music (The 90’s hit something) and started to touch music composition at the age of 12 by using the Codemaster software Music 2000.</p>
+			<p>They was a punk rock singer during some years but nothing too serious.</p>
+			<p>Then, they experimented all sort of electronic music on FL Studio and Cubase, using Vocaloid and UTAU sometimes. We can’t say if they has a specific style because they can go from chill melodic music to absolute darkcore, passing throught some dubstep and synthwave, according to the mood and the inspiration (and the heaviness of the bass). They also like to do some video games BGM remixes because they is also a gamer, you know</p>
+			<p>Some projects are still in progress. Stay tuned
+			</p>
+		</div>
+	{% endblock %}

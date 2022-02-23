@@ -18,5 +18,47 @@
 
 h1 {
     font-family: Orbitron-SemiBold;
+    font-size: 96px;
 }
 
+.text-shadow {
+    text-shadow: 4px 4px 10px #FF0000;
+}
+
+li{
+    font-family: Orbitron; 
+    font-size: 24px;
+}
+
+.w-reponsive {
+    width: 550px;
+    padding: 25px;
+    margin-right: 20%;
+    margin-left: 50%;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:1158px){
+    .w-reponsive {
+        width: 350px;
+        font-size: 10px;
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width:700px){
+    h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .w-reponsive {
+        width: 250px;
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 5px;
+    }
+}
