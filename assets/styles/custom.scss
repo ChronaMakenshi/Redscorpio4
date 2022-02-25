@@ -1,11 +1,13 @@
 $light: #E5E5E5;
 $black: #000;
 $dark: #212529;
+$danger: #5C0000;
 
 $theme-colors: (
   "light":   $light,
   "black":   $black,
-  "dark":   $dark
+  "dark":   $dark,
+  "danger": $danger
 );
 
 $display-font-sizes: (
@@ -32,3 +34,10 @@ $utilities: (
     )
 );
 
+$position-values: (
+  0: 0,
+  25: 25%,
+  50: 50%,
+  53: 53%,
+  100: 100%
+);
