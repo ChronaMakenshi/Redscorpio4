@@ -16,69 +16,117 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav w-100 d-flex justify-content-around">
 					<li class="nav-item">
-						<a class="nav-link active text-white" aria-current="page" href="#">About</a>
+						<a class="nav-link active text-white" aria-current="page" href="#About">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">Last Album</a>
+						<a class="nav-link text-light" href="#Last">Last Album</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">Remixes</a>
+						<a class="nav-link text-light" href="#Remixes">Remixes</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">Orignal Track</a>
+						<a class="nav-link text-light" href="#Original">Original Track</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">Contact</a>
+						<a class="nav-link text-light" href="#Contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="d-flex justify-content-center my-5">
-		<a href="https://redscorpio4.bandcamp.com/music"><img class="me-5 w-50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
-		<a href="https://twitter.com/RedScorpio4_"><img class="me-5 w-50" src="{{ asset('image/twitter.svg') }}" alt=""></a>
-		<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" src="{{ asset('image/youtube.svg') }}" alt=""></a>
-		<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" src="{{ asset('image/soundcould.svg') }}" alt=""></a>
-	</div>
-	<div class="position-relative my-5 py-5">
-		<img class="w-100 mt-5" src="{{ asset('image/Rectangle 1.png') }}" alt="">
-		<div class="text-white position-absolute top-53 w-reponsive translate-middle-y bg-black border-end border-bottom border-5 border-danger">
-			<p>We’re going to talk about a shy, unsure and secretive electronic music composer.</p>
-			<p>RedScorpio4 was born in France in the late 80’s and raised by a musician family, listening to punk, rock, metal and celtic music. They got quickly a real passion for electronic music (The 90’s hit something) and started to touch music composition at the age of 12 by using the Codemaster software Music 2000.</p>
-			<p>They was a punk rock singer during some years but nothing too serious.</p>
-			<p>Then, they experimented all sort of electronic music on FL Studio and Cubase, using Vocaloid and UTAU sometimes. We can’t say if they has a specific style because they can go from chill melodic music to absolute darkcore, passing throught some dubstep and synthwave, according to the mood and the inspiration (and the heaviness of the bass). They also like to do some video games BGM remixes because they is also a gamer, you know</p>
-			<p>Some projects are still in progress. Stay tuned
-			</p>
+	<main>
+		<div class="d-flex justify-content-center my-5" id="About">
+			<a href="https://redscorpio4.bandcamp.com/music"><img class="me-5 w-50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+			<a href="https://twitter.com/RedScorpio4_"><img class="me-5 w-50" src="{{ asset('image/twitter.svg') }}" alt=""></a>
+			<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" src="{{ asset('image/youtube.svg') }}" alt=""></a>
+			<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" src="{{ asset('image/soundcould.svg') }}" alt=""></a>
 		</div>
-	</div>
-	<div class="my-5">
-		<div class="bg-black p-4">
-			<h2 class=" text-white text-center text-fonts">Last Album</h>
-		</div>
-		<div class="position-relative">
-			<img class="w-100" src="{{ asset('image/pluie.png') }}" alt="">
-			<iframe class="position-absolute top-50 start-50 translate-middle banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2419035127/size=large/bgcol=333333/linkcol=e32c14/transparent=true/" seamless>
-				<a href="https://redscorpio4.bandcamp.com/album/child-of-the-90s">Child of the 90&#39;s by RedScorpio4</a>
-			</iframe>
-		</div>
-	</div>
-	<div class="my-5">
-		<div class="bg-black p-4">
-			<h2 class="text-white text-fonts text-center">Remixes</h2>
-		</div>
-		<div class="bg-black d-flex">
-			<iframe class="youtube-taille border-end border-bottom border-5 border-danger" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<div>
-				<img class="w-100 image-none" src="{{ asset('image/redscorpio4.svg') }}" alt="">
+		<div class="position-relative my-5 py-5">
+			<img class="w-100 mt-5" src="{{ asset('image/Rectangle 1.png') }}" alt="">
+			<div class="text-white position-absolute top-53 w-reponsive translate-middle-y bg-black border-end border-bottom border-5 border-danger">
+				<p>We’re going to talk about a shy, unsure and secretive electronic music composer.</p>
+				<p>RedScorpio4 was born in France in the late 80’s and raised by a musician family, listening to punk, rock, metal and celtic music. They got quickly a real passion for electronic music (The 90’s hit something) and started to touch music composition at the age of 12 by using the Codemaster software Music 2000.</p>
+				<p>They was a punk rock singer during some years but nothing too serious.</p>
+				<p>Then, they experimented all sort of electronic music on FL Studio and Cubase, using Vocaloid and UTAU sometimes. We can’t say if they has a specific style because they can go from chill melodic music to absolute darkcore, passing throught some dubstep and synthwave, according to the mood and the inspiration (and the heaviness of the bass). They also like to do some video games BGM remixes because they is also a gamer, you know</p>
+				<p>Some projects are still in progress. Stay tuned
+				</p>
 			</div>
 		</div>
-	</div>
-	<div class="my-5 position-relative">
-		<div class="bg-black p-4">
-			<h2 class=" text-white text-fonts text-start">Original Tracks</h2>
+		<div class="my-5" id="Last">
+			<div class="bg-black p-4">
+				<h2 class=" text-white text-center text-fonts">Last Album</h>
+			</div>
+			<div class="position-relative">
+				<img class="w-100" src="{{ asset('image/pluie.png') }}" alt="">
+				<iframe class="position-absolute top-50 start-50 translate-middle banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2419035127/size=large/bgcol=333333/linkcol=e32c14/transparent=true/" seamless>
+					<a href="https://redscorpio4.bandcamp.com/album/child-of-the-90s">Child of the 90&#39;s by RedScorpio4</a>
+				</iframe>
+			</div>
 		</div>
-		<div>
-			<iframe class="position-none youtube-taille border-start border-bottom border-5 border-danger" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="mt-5 position-relative" id="Remixes">
+			<div class="bg-black p-4">
+				<h2 class="text-white text-fonts text-center position-absolute-end">Remixes</h2>
+			</div>
+			<div class="bg-black d-flex">
+				<iframe class="youtube-taille border-end border-bottom border-5 border-danger" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div>
+					<img class="w-100 image-none" src="{{ asset('image/redscorpio4.svg') }}" alt="">
+				</div>
+			</div>
 		</div>
-	</div>
-</div>{% endblock %}
+		<div class="mt-5 position-relative h-block" id="Original">
+			<div class="bg-black p-4">
+				<h2 class=" text-white text-fonts text-start">Original Tracks</h2>
+			</div>
+			<div>
+				<iframe class="position-none youtube-taille border-start border-bottom border-5 border-danger mb-5" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="bg-black-bi" id="Contact">
+			<div class="p-4">
+				<h2 class="text-white text-fonts text-center">Contact</h2>
+			</div>
+			<div class="d-flex align-items-center flex-column-reverse justify-content-lg-evenly flex-lg-row">
+				<div class="bg-danger col-lg-3 col-md-8 col-12">
+					<form>
+						<div class="mb-3 mt-5 mx-5">
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name" aria-describedby="emailHelp">
+							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						</div>
+						<div class="mb-3  mx-5">
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" aria-describedby="emailHelp">
+							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						</div>
+						<div class="mb-5 mx-5">
+							<textarea type="text" class="form-control" placeholder="Message" id="exampleInputText1" name="" id="" cols="20" rows="5"></textarea>
+						</div>
+						<div class="d-flex justify-content-center mb-5">
+							<button type="submit" class="btn btn-black btn-outline-darkred text-white text-fonts-1">Send</button>
+						</div>
+					</form>
+				</div>
+				<div class="d-flex justify-content-center m-5">
+					<a href="https://redscorpio4.bandcamp.com/music"><img class="me-5 w-50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+					<a href="https://twitter.com/RedScorpio4_"><img class="me-5 w-50" src="{{ asset('image/twitter.svg') }}" alt=""></a>
+					<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" src="{{ asset('image/youtube.svg') }}" alt=""></a>
+					<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" src="{{ asset('image/soundcould.svg') }}" alt=""></a>
+				</div>
+			</div>
+		</main>
+		<footer
+			class="text-center mt-5 text-white bg-dark">
+			<!-- Grid container -->
+			<div class="container p-4"></div>
+			<!-- Grid container -->
+
+			<!-- Copyright -->
+			<div class="text-center p-5 bg-black border-top border-5 border-danger text-fonts">
+				<h6>Made by - 2022</h6>
+				<h6>Crée par : Chrona Makenshi</h6>
+				<h6>Désignée par :
+					<a class="text-white text-decoration-none" href="https://www.amejisuto7.art/">Amejisuto7</a>
+				</h6>
+			</div>
+			<!-- Copyright -->
+		</footer>
+	{% endblock %}
