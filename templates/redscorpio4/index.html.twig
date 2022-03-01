@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="position-relative">
+	<div class="position-relative" id="start">
 		<h1 class="text-white position-absolute top-50 start-50 translate-middle text-shadow">Redscorpio4</h1>
 		<img class="w-100" src="{{ asset('image/Arbre.png') }}" alt="">
 	</div>
@@ -122,7 +122,9 @@
 		<footer
 			class="text-center mt-5 text-white bg-dark">
 			<!-- Grid container -->
-			<div class="container p-4"></div>
+			<div class="container p-4 d-flex justify-content-lg-end justify-content-center">
+				<a href="#start"><img src="{{ asset('image/fleche.svg') }}" alt="Start"></a>
+			</div>
 			<!-- Grid container -->
 
 			<!-- Copyright -->
