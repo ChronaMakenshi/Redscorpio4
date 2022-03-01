@@ -8,18 +8,18 @@
 		<h1 class="text-white position-absolute top-50 start-50 translate-middle text-shadow">Redscorpio4</h1>
 		<img class="w-100" src="{{ asset('image/Arbre.png') }}" alt="">
 	</div>
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark  mb-5">
 		<div class="container-fluid">
-			<button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler bg-black m-auto mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span><img src="{{ asset('image/iconnav.svg') }}" alt="icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav w-100 d-flex justify-content-around">
+			<div class="collapse navbar-collapse bg-lg-black p-2" id="navbarNav">
+				<ul class="navbar-nav w-100 d-flex justify-content-lg-around align-items-center">
 					<li class="nav-item">
 						<a class="nav-link active text-white" aria-current="page" href="#About">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#Last">Last Album</a>
+						<a class="nav-link text-light m" href="#Last">Last Album</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link text-light" href="#Remixes">Remixes</a>
@@ -31,11 +31,17 @@
 						<a class="nav-link text-light" href="#Contact">Contact</a>
 					</li>
 				</ul>
+				<div class="d-lg-none d-flex justify-content-around my-3" id="About">
+					<a href="https://redscorpio4.bandcamp.com/music"><img src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+					<a href="https://twitter.com/RedScorpio4_"><img src="{{ asset('image/twitter.svg') }}" alt=""></a>
+					<a href="https://www.youtube.com/user/MtChronaMakenshi"><img src="{{ asset('image/youtube.svg') }}" alt=""></a>
+					<a href="https://soundcloud.com/redscorpio4"><img src="{{ asset('image/soundcould.svg') }}" alt=""></a>
+				</div>
 			</div>
 		</div>
 	</nav>
 	<main>
-		<div class="d-flex justify-content-center my-5" id="About">
+		<div class="d-lg-flex justify-content-center m-5 d-none" id="About">
 			<a href="https://redscorpio4.bandcamp.com/music"><img class="me-5 w-50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
 			<a href="https://twitter.com/RedScorpio4_"><img class="me-5 w-50" src="{{ asset('image/twitter.svg') }}" alt=""></a>
 			<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" src="{{ asset('image/youtube.svg') }}" alt=""></a>
@@ -57,7 +63,7 @@
 				<h2 class=" text-white text-center text-fonts">Last Album</h>
 			</div>
 			<div class="position-relative">
-				<img class="w-100" src="{{ asset('image/pluie.png') }}" alt="">
+				<img class="w-100 h-taille" src="{{ asset('image/pluie.png') }}" alt="">
 				<iframe class="position-absolute top-50 start-50 translate-middle banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2419035127/size=large/bgcol=333333/linkcol=e32c14/transparent=true/" seamless>
 					<a href="https://redscorpio4.bandcamp.com/album/child-of-the-90s">Child of the 90&#39;s by RedScorpio4</a>
 				</iframe>
