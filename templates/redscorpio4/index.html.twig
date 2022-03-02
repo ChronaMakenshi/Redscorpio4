@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-
+{% form_theme formContact 'bootstrap_5_layout.html.twig' %}
 {% block title %}Redscorpio4
 {% endblock %}
 
@@ -94,46 +94,45 @@
 			</div>
 			<div class="d-flex align-items-center flex-column-reverse justify-content-lg-evenly flex-lg-row">
 				<div class="bg-danger col-lg-3 col-md-8 col-12 mb-5">
-					<form>
-						<div class="mb-3 mt-5 mx-5">
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name" aria-describedby="emailHelp">
-							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-						</div>
-						<div class="mb-3  mx-5">
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" aria-describedby="emailHelp">
-							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-						</div>
-						<div class="mb-5 mx-5">
-							<textarea type="text" class="form-control" placeholder="Message" id="exampleInputText1" name="" id="" cols="20" rows="5"></textarea>
-						</div>
-						<div class="d-flex justify-content-center mb-5">
-							<button type="submit" class="btn btn-black btn-outline-darkred text-white text-fonts-1">Send</button>
-						</div>
-					</form>
-				</div>
-				<div class="mb-5">
-					<a href="https://redscorpio4.bandcamp.com/music"><img src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
-					<a href="https://twitter.com/RedScorpio4_"><img class="ms-3" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
-					<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="ms-3" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
-					<a href="https://soundcloud.com/redscorpio4"><img class="ms-3" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
-				</div>
+					{{ form_start(formContact) }}
+					<div class="mb-3 mt-5 mx-5">
+						{{ form_row(formContact.Name, {'attr': {'placeholder': "Name"}}) }}
+					</div>
+					<div class="mb-3  mx-5">
+						{{ form_row(formContact.Mail, {'attr': {'placeholder': "E-mail"}}) }}
+					</div>
+					<div class="mb-5 mx-5">
+						{{ form_row(formContact.Message, {'attr': {'placeholder': "Message"}}) }}
+					</div>
+					<div class="d-flex justify-content-center mb-5">
+						<button type="submit" class="btn btn-black btn-outline-darkred text-white text-fonts-1">Send</button>
+					</div>
+					{{ form_end(formContact) }}
+				</form>
 			</div>
-		</main>
-		<footer
-			class="text-center mt-5 text-white bg-dark">
-			<!-- Grid container -->
-			<div id="returnToHeader" class="p-4 d-flex justify-content-lg-end justify-content-center">
-				<a href="#start"><img src="{{ asset('image/fleche.svg') }}" alt="Start"></a>
+			<div class="mb-5">
+				<a href="https://redscorpio4.bandcamp.com/music"><img src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+				<a href="https://twitter.com/RedScorpio4_"><img class="ms-3" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
+				<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="ms-3" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
+				<a href="https://soundcloud.com/redscorpio4"><img class="ms-3" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
 			</div>
-			<!-- Grid container -->
-			<!-- Copyright -->
-			<div class="text-center p-5 bg-black border-top border-5 border-danger text-fonts">
-				<h6>Made by - 2022</h6>
-				<h6>Crée par : Chrona Makenshi</h6>
-				<h6>Désignée par :
-					<a class="text-white text-decoration-none" href="https://www.alois-patoor.fr/">Aloïs Patoor</a>
-				</h6>
-			</div>
-			<!--Copyright-->
-		</footer>
-	{% endblock %}
+		</div>
+	</main>
+	<footer
+		class="text-center mt-5 text-white bg-dark">
+		<!-- Grid container -->
+		<div id="returnToHeader" class="p-4 d-flex justify-content-lg-end justify-content-center">
+			<a href="#start"><img src="{{ asset('image/fleche.svg') }}" alt="Start"></a>
+		</div>
+		<!-- Grid container -->
+		<!-- Copyright -->
+		<div class="text-center p-5 bg-black border-top border-5 border-danger text-fonts">
+			<h6>Made by - 2022</h6>
+			<h6>Crée par : Chrona Makenshi</h6>
+			<h6>Désignée par :
+				<a class="text-white text-decoration-none" href="https://www.alois-patoor.fr/">Aloïs Patoor</a>
+			</h6>
+		</div>
+		<!--Copyright-->
+	</footer>
+{% endblock %}

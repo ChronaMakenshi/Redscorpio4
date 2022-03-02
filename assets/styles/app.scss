@@ -22,7 +22,11 @@ h1 {
 }
 
 .text-shadow {
-    text-shadow: 4px 4px 10px $danger;
+    text-shadow: 4px 4px 10px #FF0000;
+}
+
+.invalid-feedback {
+  color: white;
 }
 
 li{
