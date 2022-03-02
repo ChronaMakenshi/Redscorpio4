@@ -79,6 +79,13 @@ li{
     background-image: linear-gradient(to bottom, $black 78%, $dark 15%);
 }
 
+#returnToHeader{
+    position: fixed;
+    right: -80px;
+    bottom: 3rem;
+    transition: .3s;
+}
+
 @media screen and (min-width:2500px){
     .w-reponsive {
         width: 1100px;
@@ -114,6 +121,11 @@ li{
     .bg-lg-black {
         background-color: $black;
         margin-top: 10px;
+    }
+
+    #returnToHeader{
+        position: relative;
+
     }
 }
 
