@@ -94,6 +94,11 @@
 			</div>
 			<div class="d-flex align-items-center flex-column-reverse justify-content-lg-evenly flex-lg-row">
 				<div class="bg-danger col-lg-3 col-md-8 col-12 mb-5">
+					{% for message in app.flashes('success') %}
+						<div class="alert alert-success bg-white text-center">
+							{{ message }}
+						</div>
+					{% endfor %}
 					{{ form_start(formContact) }}
 					<div class="mb-3 mt-5 mx-5">
 						{{ form_row(formContact.Name, {'attr': {'placeholder': "Name"}}) }}
@@ -105,7 +110,7 @@
 						{{ form_row(formContact.Message, {'attr': {'placeholder': "Message"}}) }}
 					</div>
 					<div class="d-flex justify-content-center mb-5">
-						<button type="submit" class="btn btn-black btn-outline-darkred text-white text-fonts-1">Send</button>
+						<button type="submit" onclick="location.href='#Contact'" class="btn btn-black btn-outline-darkred text-white text-fonts-1">Send</button>
 					</div>
 					{{ form_end(formContact) }}
 				</form>

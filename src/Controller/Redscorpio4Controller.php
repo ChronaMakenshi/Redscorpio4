@@ -30,10 +30,10 @@ class Redscorpio4Controller extends AbstractController
                        
           $form->handleRequest($request);
           if($form->isSubmitted() && $form->isValid()){
-            
+            $this->addFlash('success', 'Your message has been sent !');
             $manager->persist($contact);
             $manager->flush();
-
+  
             return $this->redirectToRoute('redscorpio4');
           }
         return $this->render('redscorpio4/index.html.twig', [
