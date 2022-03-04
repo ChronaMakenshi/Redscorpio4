@@ -37,8 +37,6 @@ li{
 .w-reponsive {
     width: 550px;
     padding: 25px;
-    margin-right: 20%;
-    margin-left: 50%;
     font-size: 16px;
 }
 
@@ -56,14 +54,13 @@ li{
     font-size: 48px;
 }
 
-.h-taille{
-    height: 100%;
-}
-
 .banpcamp-taille{
+    display: block;
     border: 0; 
-    width: 25%; 
-    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 600px;
 }
 
 
@@ -102,6 +99,10 @@ li{
         height: 550px;
     }
 
+    .bg-black-youtube {
+        background-color: $black;
+    }
+
     .youtube-taille{
         width: 700px;
         height: 359px;
@@ -137,7 +138,6 @@ li{
     .w-reponsive {
         width: 350px;
         font-size: 10px;
-        margin-left: 40%;
     }
 
     .h-taille{
@@ -152,11 +152,6 @@ li{
 }
 
 @media screen and (max-width:840px){
-    .banpcamp-taille{
-        width: 200px; 
-        height: 100%;
-    }
-
     .bg-black-bi{
         background-image: linear-gradient(to bottom, $black 100%, $dark 0%);
         padding-bottom: 100px;
@@ -167,7 +162,7 @@ li{
     h1 {
         font-size: 38px;
     }
-
+    
     .text-fonts{
         font-size: 24px;
       }
@@ -176,14 +171,16 @@ li{
         display: flex;
         justify-content: center;
         margin-left: 0%;
-        width: 100%;
-        height: 350px;
+        width: 90%;
     }
 
     .position-none {
         position: relative;
         top: 0;
         right: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .image-none{
@@ -195,9 +192,15 @@ li{
     .w-reponsive {
         width: 250px;
         padding: 10px;
-        margin-left: 5%;
-        margin-right: 5%;
         font-size: 5px;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
     }
    
 }

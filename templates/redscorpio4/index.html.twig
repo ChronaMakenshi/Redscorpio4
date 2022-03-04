@@ -49,7 +49,7 @@
 		</div>
 		<div class="position-relative my-5 py-5">
 			<img class="w-100 mt-5" src="{{ asset('image/Rectangle 1.png') }}" alt="">
-			<div class="text-white position-absolute top-53 w-reponsive translate-middle-y bg-black border-end border-bottom border-5 border-danger">
+			<div class="text-white position-absolute top-53 end-5 w-reponsive translate-middle-y bg-black border-end border-bottom border-5 border-danger">
 				<p>We’re going to talk about a shy, unsure and secretive electronic music composer.</p>
 				<p>RedScorpio4 was born in France in the late 80’s and raised by a musician family, listening to punk, rock, metal and celtic music. They got quickly a real passion for electronic music (The 90’s hit something) and started to touch music composition at the age of 12 by using the Codemaster software Music 2000.</p>
 				<p>They was a punk rock singer during some years but nothing too serious.</p>
@@ -63,17 +63,58 @@
 				<h2 class=" text-white text-center text-fonts">Last Album</h>
 			</div>
 			<div class="position-relative">
-				<img class="w-100 h-taille mb-5" src="{{ asset('image/pluie.png') }}" alt="">
-				<iframe class="position-absolute top-50 start-50 translate-middle pb-5 banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2419035127/size=large/bgcol=333333/linkcol=e32c14/transparent=true/" seamless>
-					<a href="https://redscorpio4.bandcamp.com/album/child-of-the-90s">Child of the 90&#39;s by RedScorpio4</a>
-				</iframe>
+				<img class="position-absolute w-100 h-100" src="{{ asset('image/pluie.png') }}" alt="">
+				<div id="carouselExampleIndicators" data-bs-interval="false" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=3921174629/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<a href="https://redscorpio4.bandcamp.com/album/steel-darkness">Steel &amp; Darkness by RedScorpio4</a>
+							</iframe>
+						</div>
+						<div class="carousel-item">
+							<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2419035127/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<a href="https://redscorpio4.bandcamp.com/album/child-of-the-90s">Child of the 90&#39;s by RedScorpio4</a>
+							</iframe>
+						</div>
+						<div class="carousel-item">
+							<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2545169762/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<a href="https://redscorpio4.bandcamp.com/album/steel-poison">Steel &amp; Poison by RedScorpio4</a>
+							</iframe>
+						</div>
+						<div class="carousel-item">
+							<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=83631677/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<a href="https://redscorpio4.bandcamp.com/album/desillusion">DESILLUSION by RedScorpio4</a>
+							</iframe>
+						</div>
+						<div class="carousel-item">
+							<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2576687762/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<a href="https://redscorpio4.bandcamp.com/album/blue">Blue by RedScorpio4</a>
+							</iframe>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon p-5" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon p-5" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 			</div>
 		</div>
 		<div class="position-relative" id="Remixes">
 			<div class="bg-black p-5 mt-5">
 				<h2 class="text-white text-fonts text-center position-absolute-end">Remixes</h2>
 			</div>
-			<div class="bg-black d-flex justify-content-center">
+			<div class="bg-black-youtube d-flex justify-content-center">
 				<iframe class="youtube-taille border-end border-bottom border-5 border-danger mt-5" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<div>
 					<img class="image-none" src="{{ asset('image/redscorpio4.svg') }}" alt="redscorpio4">
@@ -85,7 +126,7 @@
 				<h2 class="text-white text-fonts text-lg-start text-center">Original Tracks</h2>
 			</div>
 			<div>
-				<iframe class="position-none youtube-taille mt-0 mt-md-4 border-start border-bottom border-5 border-danger" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="position-none youtube-taille mt-5 border-start border-bottom border-5 border-danger" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="bg-black-bi mt-5 mt-lg-0" id="Contact">
