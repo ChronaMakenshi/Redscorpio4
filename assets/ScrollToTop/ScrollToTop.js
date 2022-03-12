@@ -1,5 +1,9 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import image from "./fleche.svg"
 
-scrollPos = 0;
+function App(){
+let scrollPos = 0;
 let getHeader = document.getElementById("returnToHeader");
 // adding scroll event
 window.addEventListener('scroll', function(){
@@ -13,4 +17,18 @@ window.addEventListener('scroll', function(){
     }
 	// saves the new position for iteration.
 	scrollPos = (document.body.getBoundingClientRect()).top;
-});
+})    
+    return (
+        <div className='p-4 d-flex justify-content-lg-end justify-content-center'>
+            <a href="#start"><img src={image} /></a>
+        </div>
+    )
+    
+}
+
+const rootElement = document.getElementById("returnToHeader")
+ReactDOM.render(<App />, rootElement)
+
+
+
+
