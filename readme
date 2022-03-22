@@ -1,0 +1,3 @@
+cmd pour le serveur
+
+rsync -av ./  redscorpgp@ssh.cluster020.hosting.ovh.net:/home/redscorpgp/Redscorpio4  --include=public/build --include=public/.htaccess --exclude-from=.gitignore --exclude=".*"
