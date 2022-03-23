@@ -6,12 +6,12 @@
 {% block body %}
 	<div class="position-relative" id="start">
 		<h1 class="text-white position-absolute top-50 start-50 translate-middle text-shadow">Redscorpio4</h1>
-		<img class="w-100" src="{{ asset('image/Arbre.png') }}" alt="">
+		<img class="w-100" rel="preload" src="{{ asset('image/Arbre.jpg') }}" alt="Redscorpio4">
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-light mb-5">
 		<div class="container-fluid">
 			<button class="navbar-toggler bg-black m-auto mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span><img src="{{ asset('image/iconnav.svg') }}" alt="icon"></span>
+				<span><img rel="preload" src="{{ asset('image/iconnav.svg') }}" alt="icon"></span>
 			</button>
 			<div class="collapse navbar-collapse p-2 bg-lg-black" id="navbarNav">
 				<ul class="navbar-nav w-100 d-flex justify-content-lg-around align-items-center">
@@ -32,10 +32,10 @@
 					</li>
 				</ul>
 				<div class="d-lg-none d-flex justify-content-around my-3">
-					<a href="https://redscorpio4.bandcamp.com/music"><img src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
-					<a href="https://twitter.com/RedScorpio4_"><img src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
-					<a href="https://www.youtube.com/user/MtChronaMakenshi"><img src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
-					<a href="https://soundcloud.com/redscorpio4"><img src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
+					<a href="https://redscorpio4.bandcamp.com/music"><img rel="preload" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+					<a href="https://twitter.com/RedScorpio4_"><img rel="preload" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
+					<a href="https://www.youtube.com/user/MtChronaMakenshi"><img rel="preload" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
+					<a href="https://soundcloud.com/redscorpio4"><img rel="preload" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
 				</div>
 			</div>
 		</div>
@@ -48,7 +48,7 @@
 			<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
 		</div>
 		<div class="position-relative my-5 py-5" id="About">
-			<img class="w-100 mt-5" src="{{ asset('image/Rectangle 1.png') }}" alt="">
+			<img class="w-100 mt-5" rel="preload" src="{{ asset('image/Rectangle_1.jpg') }}" alt="About">
 			<div class="text-white position-absolute top-53 end-5 w-reponsive translate-middle-y bg-black border-end border-bottom border-5 border-danger">
 				<p>We’re going to talk about a shy, unsure and secretive electronic music composer.</p>
 				<p>RedScorpio4 was born in France in the late 80’s and raised by a musician family, listening to punk, rock, metal and celtic music. They got quickly a real passion for electronic music (The 90’s hit something) and started to touch music composition at the age of 12 by using the Codemaster software Music 2000.</p>
@@ -62,9 +62,9 @@
 			<div class="bg-black p-4">
 				<h2 class=" text-white text-center text-fonts">Last Album</h>
 			</div>
-			<div class="position-relative">
-				<img class="position-absolute w-100 h-100" src="{{ asset('image/pluie.png') }}" alt="">
-				<div id="carouselExampleIndicators" data-bs-interval="false" class="carousel slide" data-bs-ride="carousel">
+			<div class="position-relative d-flex justify-content-center">
+				<img class="position-absolute w-100 h-100" rel="preload" src="{{ asset('image/pluie.jpg') }}" alt="Last_Album">
+				<div id="carouselExampleIndicators" data-bs-interval="false" class="carousel slide w-75" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -117,7 +117,7 @@
 			<div class="bg-black-youtube d-flex justify-content-center">
 				<iframe class="youtube-taille border-end border-bottom border-5 border-danger mt-5" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<div>
-					<img class="image-none" src="{{ asset('image/redscorpio4.svg') }}" alt="redscorpio4">
+					<img class="image-none" rel="preload" src="{{ asset('image/redscorpio4.svg') }}" alt="redscorpio4">
 				</div>
 			</div>
 		</div>
@@ -157,10 +157,10 @@
 				</form>
 			</div>
 			<div class="mb-5">
-				<a href="https://redscorpio4.bandcamp.com/music"><img src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
-				<a href="https://twitter.com/RedScorpio4_"><img class="ms-3" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
-				<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="ms-3" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
-				<a href="https://soundcloud.com/redscorpio4"><img class="ms-3" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
+				<a href="https://redscorpio4.bandcamp.com/music"><img rel="preload" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+				<a href="https://twitter.com/RedScorpio4_"><img rel="preload" class="ms-3" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
+				<a href="https://www.youtube.com/user/MtChronaMakenshi"><img rel="preload" class="ms-3" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
+				<a href="https://soundcloud.com/redscorpio4"><img class="ms-3" rel="preload" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
 			</div>
 		</div>
 	</main>

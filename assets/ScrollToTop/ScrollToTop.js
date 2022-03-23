@@ -20,7 +20,7 @@ window.addEventListener('scroll', function(){
 })    
     return (
         <div className='p-4 d-flex justify-content-lg-end justify-content-center'>
-            <a href="#start"><img src={image} /></a>
+            <a href="#start"><img alt="Start" rel="preload" src={image} /></a>
         </div>
     )
     

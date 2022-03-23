@@ -14,7 +14,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 class Redscorpio4Controller extends AbstractController
 {
-    #[Route('/', name: 'redscorpio4')]
+    /**
+     * @Route("/", name="redscorpio4")
+     */
 
     public function index(BoiteEmail $contact = null,Request $request,EntityManagerInterface $manager): Response
     {

@@ -3,21 +3,18 @@
 
 @font-face {
     font-family: "Orbitron";
-    src:url('../fonts/Orbitron-Regular.ttf'),
+    src:url('../fonts/Orbitron-Regular.ttf');
+    font-display: optional;
 }
 
 @font-face {
     font-family: "Orbitron-SemiBold";
-    src:url('../fonts/Orbitron-SemiBold.ttf'),
-}
-
-@font-face {
-    font-family: "Roboto";
-    src:url('../fonts/Roboto-Regular.ttf'),
+    src:url('../fonts/Orbitron-SemiBold.ttf');
+    font-display: optional;
 }
 
 h1 {
-    font-family: Orbitron-SemiBold;
+    font-family: Orbitron-SemiBold, sans-serif;
     font-size: 96px;
 }
 
@@ -30,7 +27,7 @@ h1 {
 }
 
 li{
-    font-family: Orbitron; 
+    font-family: Orbitron, sans-serif; 
     font-size: 24px;
 }
 
@@ -67,12 +64,12 @@ li{
 }  
 
 .text-fonts-1{
-  font-family: Orbitron;
+  font-family: Orbitron, sans-serif;
   font-size: 24px;
 }
 
 .text-fonts{
-    font-family: Orbitron;
+    font-family: Orbitron, sans-serif;
     font-size: 48px;
 }
 
