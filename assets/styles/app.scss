@@ -14,7 +14,7 @@
     font-display: auto;
 }
 
-// Title
+// Title of the Site
 
 h1 {
     font-family: Orbitron-SemiBold, sans-serif;
@@ -50,6 +50,7 @@ h1 {
     transition: transform .3s ease;
 }
 
+// About
 
 .w-reponsive {
     width: 550px;
@@ -57,19 +58,39 @@ h1 {
     font-size: 16px;
 }
 
+//Reximes
+
 .h-block{
     margin-top: 100px;
-}  
+} 
+
+//Video Youtube
+
+.position-absolute-end {
+    position:absolute;
+    top: 50px; 
+    left: 75%;
+}
+
+// Bouton
 
 .text-fonts-1{
   font-family: Orbitron, sans-serif;
   font-size: 24px;
 }
 
-.text-fonts{
-    font-family: Orbitron, sans-serif;
-    font-size: 48px;
+
+// Original
+
+//Video Youtube
+
+.position-absolute-y {
+    position:absolute;
+    top: 50px; 
+    right: 30px;
 }
+
+// Carousel
 
 .banpcamp-taille{
     display: block;
@@ -81,21 +102,20 @@ h1 {
 }
 
 
-.position-none {
-    position:absolute;
-    top: 50px; 
-    right: 30px;
-}
+//Contact
 
-.position-absolute-end {
-    position:absolute;
-    top: 50px; 
-    left: 75%;
+// title
+
+.text-fonts{
+    font-family: Orbitron, sans-serif;
+    font-size: 48px;
 }
 
 .bg-black-bi{
     background-image: linear-gradient(to bottom, $black 78%, $dark 15%);
 }
+
+//ScrollToTop
 
 #returnToHeader{
     position: fixed;
@@ -104,7 +124,12 @@ h1 {
     transition: .3s;
 }
 
+// Reponsive
+
 @media screen and (min-width:2500px){
+
+    // About
+
     .w-reponsive {
         width: 1100px;
         font-size: 30px;
@@ -112,6 +137,9 @@ h1 {
 }
 
 @media screen and (min-width:700px){
+
+    //Reximes
+
     .h-block{
         height: 550px;
     }
@@ -120,6 +148,9 @@ h1 {
         background-color: $black;
     }
 
+    //Reximes et Original
+    //Video Youtube
+
     .youtube-taille{
         width: 700px;
         height: 359px;
@@ -127,12 +158,18 @@ h1 {
 }
 
 @media screen and (min-width:1259px){
+
+    //Reximes
+
     .h-block{
         height: 515px;
     }
 }
 
 @media screen and (max-width:1646px){
+    //Reximes
+    //Video Youtube
+
     .position-absolute-end {
         position: relative;
         top: 0;
@@ -140,11 +177,16 @@ h1 {
     }
 }
 @media screen and (max-width:992px){
+
+    //Navbar
+
     .bg-lg-black {
         background-color: $black;
         margin-top: 10px;
         z-index: 1;
     }
+
+    //ScrollToTop
 
     #returnToHeader{
         position: relative;
@@ -153,16 +195,18 @@ h1 {
 }
 
 @media screen and (max-width:1258px){
+
+    // About
+
     .w-reponsive {
         width: 350px;
         font-size: 10px;
     }
+    // Original
 
-    .h-taille{
-        height: 600px;
-    }
+    //Video Youtube
 
-    .position-none {
+    .position-absolute-y {
         position:absolute;
         top: 90px; 
         right: 0px;
@@ -170,6 +214,9 @@ h1 {
 }
 
 @media screen and (max-width:840px){
+
+    //Contact
+
     .bg-black-bi{
         background-image: linear-gradient(to bottom, $black 100%, $dark 0%);
         padding-bottom: 100px;
@@ -177,13 +224,15 @@ h1 {
 }
 
 @media screen and (max-width:760px){
+
+    // Title of the Site
+
     h1 {
         font-size: 38px;
     }
-    
-    .text-fonts{
-        font-size: 24px;
-      }
+
+    //Reximes et Original
+    //Video Youtube
     
     .youtube-taille{
         display: flex;
@@ -192,7 +241,16 @@ h1 {
         width: 90%;
     }
 
-    .position-none {
+    // image reximes
+
+    .image-none{
+        display: none;
+    }
+
+    // Original
+    //Video Youtube
+
+    .position-absolute-y {
         position: relative;
         top: 0;
         right: 0;
@@ -200,19 +258,28 @@ h1 {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    //ContacT
+    // title
 
-    .image-none{
-        display: none;
-    }
+    .text-fonts{
+        font-size: 24px;
+      }
+
 }
 
 @media screen and (max-width:600px){
+
+    // About
+
     .w-reponsive {
         width: 250px;
         padding: 10px;
         font-size: 5px;
     }
 
+    // Carousel
+    
     .carousel-control-prev {
         display: none;
     }
