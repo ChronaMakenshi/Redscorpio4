@@ -1,17 +1,20 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 
+// fonts
 @font-face {
     font-family: "Orbitron";
     src:url('../fonts/Orbitron-Regular.ttf');
-    font-display: optional;
+    font-display: auto;
 }
 
 @font-face {
     font-family: "Orbitron-SemiBold";
     src:url('../fonts/Orbitron-SemiBold.ttf');
-    font-display: optional;
+    font-display: auto;
 }
+
+// Title
 
 h1 {
     font-family: Orbitron-SemiBold, sans-serif;
@@ -22,17 +25,11 @@ h1 {
     text-shadow: 4px 4px 10px #FF0000;
 }
 
-.invalid-feedback {
-  color: white;
-}
-
-li{
-    font-family: Orbitron, sans-serif; 
-    font-size: 24px;
-}
-
+// Navbar
 .navbar li{
     position: relative;
+       font-family: Orbitron, sans-serif; 
+    font-size: 24px;
 }
 .navbar li::before{  
     transform: scaleX(0);
@@ -52,6 +49,7 @@ li{
     z-index: -1;
     transition: transform .3s ease;
 }
+
 
 .w-reponsive {
     width: 550px;
