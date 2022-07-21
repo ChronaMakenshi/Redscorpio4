@@ -5,106 +5,107 @@
 
 {% block body %}
 	{# start of the title #}
-	<div class="position-relative" id="start">
-		<h1 class="text-white position-absolute top-50 start-50 translate-middle text-shadow">Redscorpio4</h1>
-		<img class="w-100" rel="preload" src="{{ asset('image/Arbre.jpg') }}" alt="Redscorpio4">
-	</div>
-	{# end of the title #}
-	{# start of the nav #}
-	<nav class="navbar navbar-expand-lg navbar-light mb-5">
-		<div class="container-fluid">
-			<button class="navbar-toggler bg-black m-auto mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span><img rel="preload" src="{{ asset('image/iconnav.svg') }}" alt="icon"></span>
-			</button>
-			<div class="collapse navbar-collapse p-2 bg-lg-black" id="navbarNav">
-				<ul class="navbar-nav w-100 d-flex justify-content-lg-around align-items-center">
-					<li class="nav-item">
-						<a class="nav-link active text-white" aria-current="page" href="#About">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-light m" href="#Last">Last Album</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-light" href="#Remixes">Remixes</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-light" href="#Original">Original Track</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-light" href="#Contact">Contact</a>
-					</li>
-				</ul>
-				<div class="d-lg-none d-flex justify-content-around my-3">
-					<a href="https://redscorpio4.bandcamp.com/music"><img rel="preload" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
-					<a href="https://twitter.com/RedScorpio4_"><img rel="preload" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
-					<a href="https://www.youtube.com/user/MtChronaMakenshi"><img rel="preload" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
-					<a href="https://soundcloud.com/redscorpio4"><img rel="preload" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
+	<header class="container-fluid p-0">
+		<div class="position-relative" id="start">
+			<h1 class="text-white position-absolute top-50 start-50 translate-middle">RedScorpio4</h1>
+			<img class="w-100" rel="preload" src="{{ asset('image/Arbre.webp') }}" alt="Redscorpio4">
+		</div>
+		{# end of the title #}
+		{# start of the nav #}
+		<nav class="navbar navbar-expand-lg navbar-light mt-1">
+			<div class="container-fluid p-0">
+				<button class="navbar-toggler bg-black m-auto mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span><img rel="preload" width="20" height="20" src="{{ asset('image/iconnav.svg') }}" alt="icon"></span>
+				</button>
+				<div class="collapse navbar-collapse p-2 bg-lg-black" id="navbarNav">
+					<ul class="navbar-nav w-100  d-flex justify-content-lg-evenly align-items-center">
+						<li class="nav-item">
+							<a class="nav-link active text-white" aria-current="page" href="#About">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#Last">Last Album</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#Remixes">Remixes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#Original">Original Track</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#Contact">Contact</a>
+						</li>
+					</ul>
+					<div class="d-lg-none d-flex justify-content-around">
+						<a href="https://redscorpio4.bandcamp.com/music"><img rel="preload" width="50" height="50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+						<a href="https://twitter.com/RedScorpio4_"><img rel="preload" width="50" height="50" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
+						<a href="https://www.youtube.com/user/MtChronaMakenshi"><img width="50" height="50" rel="preload" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
+						<a href="https://soundcloud.com/redscorpio4"><img rel="preload" width="80" height="50" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</header>
 	{# end of the nav #}
-	<main>
-		{# start of the about #}
+	{# start of the about #}
+	<main class="container-fluid p-0">
 		<section>
-			<div class="d-lg-flex justify-content-center m-5 d-none">
-				<a href="https://redscorpio4.bandcamp.com/music"><img class="me-5 w-50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
-				<a href="https://twitter.com/RedScorpio4_"><img class="me-5 w-50" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
-				<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
-				<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
+			<div class="d-lg-flex justify-content-center mt-5 mb-6 d-none">
+				<a href="https://redscorpio4.bandcamp.com/music"><img class="me-5 w-50" width="50" height="50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+				<a href="https://twitter.com/RedScorpio4_"><img class="me-5 w-50" width="50" height="50" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
+				<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" width="50" height="50" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
+				<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" width="80" height="50" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
 			</div>
-			<div class="position-relative my-5 py-5" id="About">
-				<img class="w-100 mt-5" rel="preload" src="{{ asset('image/Rectangle_1.jpg') }}" alt="About">
-				<div class="text-white position-absolute top-53 end-5 w-reponsive translate-middle-y bg-black border-end border-bottom border-5 border-danger">
+			<div class="position-relative mb-6" id="About">
+				<article class="text-white end-5 h-100 position-absolute w-about bg-black m-2">
 					<p>We’re going to talk about a shy, unsure and secretive electronic music composer.</p>
 					<p>RedScorpio4 was born in France in the late 80’s and raised by a musician family, listening to punk, rock, metal and celtic music. They got quickly a real passion for electronic music (The 90’s hit something) and started to touch music composition at the age of 12 by using the Codemaster software Music 2000.</p>
 					<p>They was a punk rock singer during some years but nothing too serious.</p>
 					<p>Then, they experimented all sort of electronic music on FL Studio and Cubase, using Vocaloid and UTAU sometimes. We can’t say if they has a specific style because they can go from chill melodic music to absolute darkcore, passing throught some dubstep and synthwave, according to the mood and the inspiration (and the heaviness of the bass). They also like to do some video games BGM remixes because they is also a gamer, you know</p>
-					<p>Some projects are still in progress. Stay tuned
-					</p>
-				</div>
+					<p>Some projects are still in progress. Stay tuned</p>
+				</article>
+				<img class="img-about w-100 h-100 py-5" rel="preload" src="{{ asset('image/Rectangle_1.webp') }}" alt="About">
 			</div>
 		</section>
 		{# end of the about #}
 		{# start of the carousel #}
 		<section>
 			<div id="Last">
-				<div class="bg-black p-4">
-					<h2 class=" text-white text-center text-fonts">Last Album</h>
+				<div class="bg-black py-5">
+					<h2 class="text-white text-center">Last Album</h>
 				</div>
-				<div class="position-relative d-flex justify-content-center">
-					<img class="position-absolute w-100 h-100" rel="preload" src="{{ asset('image/pluie.jpg') }}" alt="Last_Album">
-					<div id="carouselExampleIndicators" data-bs-interval="false" class="carousel slide w-75" data-bs-ride="carousel">
+				<div class="position-relative d-md-flex justify-content-md-center">
+					<img class="position-absolute w-100 img-carousel" src="{{ asset('image/pluie.webp') }}" alt="Last">
+					<div id="carouselExampleIndicators" class="carousel slide col-md-10 col-lg-8" data-bs-interval="false" data-bs-ride="true">
 						<div class="carousel-indicators">
 							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
 						</div>
 						<div class="carousel-inner pb-5">
 							<div class="carousel-item active">
-								<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=3921174629/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<iframe class="d-block m-auto carousel-rep" title="steel-darkness" src="https://bandcamp.com/EmbeddedPlayer/album=3921174629/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
 									<a href="https://redscorpio4.bandcamp.com/album/steel-darkness">Steel &amp; Darkness by RedScorpio4</a>
 								</iframe>
 							</div>
 							<div class="carousel-item">
-								<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2419035127/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<iframe class="d-block m-auto carousel-rep" title="child-of-the-90s" src="https://bandcamp.com/EmbeddedPlayer/album=2419035127/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
 									<a href="https://redscorpio4.bandcamp.com/album/child-of-the-90s">Child of the 90&#39;s by RedScorpio4</a>
 								</iframe>
 							</div>
 							<div class="carousel-item">
-								<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2545169762/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<iframe class="d-block m-auto carousel-rep" title="steel-poison" src="https://bandcamp.com/EmbeddedPlayer/album=2545169762/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
 									<a href="https://redscorpio4.bandcamp.com/album/steel-poison">Steel &amp; Poison by RedScorpio4</a>
 								</iframe>
 							</div>
 							<div class="carousel-item">
-								<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=83631677/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<iframe class="d-block m-auto carousel-rep" title="desillusion" src="https://bandcamp.com/EmbeddedPlayer/album=83631677/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
 									<a href="https://redscorpio4.bandcamp.com/album/desillusion">DESILLUSION by RedScorpio4</a>
 								</iframe>
 							</div>
 							<div class="carousel-item">
-								<iframe class="banpcamp-taille" src="https://bandcamp.com/EmbeddedPlayer/album=2576687762/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
+								<iframe class="d-block m-auto carousel-rep" title="blue" src="https://bandcamp.com/EmbeddedPlayer/album=2576687762/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless>
 									<a href="https://redscorpio4.bandcamp.com/album/blue">Blue by RedScorpio4</a>
 								</iframe>
 							</div>
@@ -124,61 +125,57 @@
 		{# end of the carousel #}
 		{# start of the youtube #}
 		<section>
-			<div class="position-relative" id="Remixes">
-				<div class="bg-black p-5 mt-5">
-					<h2 class="text-white text-fonts text-center position-absolute-end">Remixes</h2>
-				</div>
-				<div class="bg-black-youtube d-flex justify-content-center">
-					<iframe class="youtube-taille border-end border-bottom border-5 border-danger mt-5" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<div>
-						<img class="image-none" rel="preload" src="{{ asset('image/redscorpio4.svg') }}" alt="redscorpio4">
-					</div>
+			<div class="remixe bg-black my-6 position-relative pt-5">
+				<h2 class="text-white text-center position-absolute end-5 top-5">Remixes</h2>
+				<div class="d-flex justify-content-center">
+					<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+					<img class="image-remixe ps-2" rel="preload" width="277" height="406" src="{{ asset('image/redscorpio4.svg') }}" alt="redscorpio4">
 				</div>
 			</div>
-			<div class="position-relative h-block" id="Original">
-				<div class="bg-black p-5">
-					<h2 class="text-white text-fonts text-lg-start text-center">Original Tracks</h2>
+			<div class="position-relative original-tracks" id="Original">
+				<div class="bg-black py-5">
+					<h2 class="text-white ms-7">Original Tracks</h2>
 				</div>
-				<div>
-					<iframe class="position-absolute-y youtube-taille mt-5 border-start border-bottom border-5 border-danger" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="d-flex justify-content-center pt-5">
+					<iframe class="youtube2 position-absolute end-10 top-45" src="https://www.youtube.com/embed/videoseries?list=PLrNXWRVge-Yg0Xx7FrH2aA_mF3xiSbzy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 				</div>
 			</div>
 		</section>
 		{# end of the youtubes #}
 		{# start of the contact  #}
 		<section>
-			<div class="bg-black-bi mt-5 mt-lg-0" id="Contact">
-				<div class="p-4">
-					<h2 class="text-white text-fonts text-center">Contact</h2>
-				</div>
-				<div class="d-flex align-items-center flex-column-reverse justify-content-lg-evenly flex-lg-row">
-					<div class="bg-danger col-lg-3 col-md-8 col-12 mb-5">
-						{% for message in app.flashes('success') %}
-							<div class="alert alert-success bg-white text-center">
-								{{ message }}
+			<div class="padding  mt-lg-0" id="Contact">
+				<div class="bg-black-bi">
+					<h2 class="text-white py-5 text-fonts text-center">Contact</h2>
+					<div class="d-flex align-items-center flex-column-reverse justify-content-lg-evenly flex-lg-row">
+						<div class="bg-danger form col-lg-3 col-md-8 col-12 mb-5">
+							{% for message in app.flashes('success') %}
+								<div class="alert alert-success bg-white text-center">
+									{{ message }}
+								</div>
+							{% endfor %}
+							{{ form_start(formContact) }}
+							<div class="mb-4 mt-6 mx-5">
+								{{ form_row(formContact.Name, {'attr': {'placeholder': "Name"}}) }}
 							</div>
-						{% endfor %}
-						{{ form_start(formContact) }}
-						<div class="mb-3 mt-5 mx-5">
-							{{ form_row(formContact.Name, {'attr': {'placeholder': "Name"}}) }}
-						</div>
-						<div class="mb-3  mx-5">
-							{{ form_row(formContact.Mail, {'attr': {'placeholder': "E-mail"}}) }}
-						</div>
-						<div class="mb-5 mx-5">
-							{{ form_row(formContact.Message, {'attr': {'placeholder': "Message"}}) }}
-						</div>
-						<div class="d-flex justify-content-center mb-5">
-							<button type="submit" onclick="location.href='#Contact'" class="btn btn-black btn-outline-darkred text-white text-fonts-1">Send</button>
-						</div>
-						{{ form_end(formContact) }}
-					</form>
-				</div>
-				<div class="mb-5">
-					<a href="https://redscorpio4.bandcamp.com/music"><img rel="preload" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
-					<a href="https://twitter.com/RedScorpio4_"><img rel="preload" class="ms-3" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
-					<a href="https://www.youtube.com/user/MtChronaMakenshi"><img rel="preload" class="ms-3" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
-					<a href="https://soundcloud.com/redscorpio4"><img class="ms-3" rel="preload" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
+							<div class="mb-4 mx-5">
+								{{ form_row(formContact.Mail, {'attr': {'placeholder': "E-mail"}}) }}
+							</div>
+							<div class="mb-5 mx-5">
+								{{ form_row(formContact.Message, {'attr': {'placeholder': "Message"}}) }}
+							</div>
+							<div class="d-flex justify-content-center">
+								<button type="submit" onclick="location.href='#Contact'" class="btn btn-black btn-outline-darkred text-white px-5 py-3">Send</button>
+							</div>
+							{{ form_end(formContact) }}
+						</form>
+					</div>
+					<div class="mb-5">
+						<a href="https://redscorpio4.bandcamp.com/music"><img rel="preload" width="50" height="50" src="{{ asset('image/bandcamp.svg') }}" alt="bandcamp"></a>
+						<a href="https://twitter.com/RedScorpio4_"><img rel="preload" class="ms-3" width="50" height="50" src="{{ asset('image/twitter.svg') }}" alt="twitter"></a>
+						<a href="https://www.youtube.com/user/MtChronaMakenshi"><img rel="preload" width="50" height="50" class="ms-3" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
+						<a href="https://soundcloud.com/redscorpio4"><img class="ms-3" rel="preload" width="80" height="50" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -188,15 +185,16 @@
 	<footer
 		class="text-center mt-5 text-white bg-dark">
 		<!-- Grid container -->
-		<div id="returnToHeader"></div>
+		<div id="ScrollPos"></div>
 		<!-- Grid container -->
 		<!-- Copyright -->
-		<div class="text-center p-5 bg-black border-top border-5 border-danger text-fonts">
-			<h6>Made by - 2022</h6>
-			<h6>Crée par : Chrona Makenshi</h6>
-			<h6>Désignée par :
-				<a class="text-white text-decoration-none" href="https://www.alois-patoor.fr/">Aloïs Patoor</a>
-			</h6>
+		<div class="text-center p-5 bg-black border-top border-5 border-danger">
+			<p>Made by - 2022<br>
+				Crée par :
+				<a class="fw-bolder text-decoration-none link-primary" href="#">Christophe Mestdagh</a><br>
+				Désignée par :
+				<a class="fw-bolder text-decoration-none link-primary" href="https://www.alois-patoor.fr/">Aloïs Patoor</a>
+			</p>
 		</div>
 		<!--Copyright-->
 	</footer>

@@ -1,0 +1,248 @@
+@import "./custom";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// fonts
+@font-face {
+    font-family: "Orbitron";
+    src:url('..\assets\fonts\Orbitron-VariableFont_wght.ttf');
+    font-display: auto;
+}
+
+// Body
+// le corps du Site
+
+body {
+    background: $dark;
+}
+
+h2{
+    font-family: Orbitron, sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+// header
+// en-tête
+
+header h1 {
+    font-size: calc(100% + 4vw + 4vh);
+    font-weight: 700;
+    font-style: normal;
+    font-family: Orbitron, sans-serif;
+    text-shadow: 4px 4px 10px #FF0000;
+}
+
+@media (max-width: 655px) {  
+    header h1 {
+        font-size: calc(100% + 1vw + 1vh);
+    }
+  }
+
+// barre navigation
+// navigation bar
+
+header nav {
+    font-family: Orbitron, sans-serif;
+    font-size: 1.5em;
+}
+
+header nav li{
+    position: relative;
+}
+
+header nav li::before{  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+header nav li:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+header nav li::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: $darkred;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+@media screen and (max-width:991px){
+
+    .bg-lg-black {
+        background-color: $black;
+        margin-top: 10px;
+        z-index: 1;
+    }
+
+}
+
+// About
+
+.w-about {
+    font-family: Orbitron, sans-serif;
+    font-weight: normal;
+    width: 50%;
+    max-height: 560px;
+    padding: 2%;
+    font-size: 0.9em;
+    box-shadow: 10px 10px $danger;
+}
+
+.img-about{
+    max-width: 1903px;
+    max-height: 584px;
+}
+
+@media screen and (max-width:1400px){
+
+    .w-about {
+        font-size: 0.7em;
+        box-shadow: none;
+    }
+
+}
+
+@media screen and (max-width:991px){
+
+    .w-about {
+        width: 88%;
+        font-size: 0.3em;
+        height: 280px;
+    }
+
+}
+
+// Carousel
+
+.img-carousel{
+    height: 873px;
+}
+
+.carousel-rep{
+    padding-top: 2.5%;
+    border: 0; 
+    width: 500px; 
+    height: 848px;
+}
+
+
+@media screen and (max-width:768px){
+
+    .img-carousel{
+        display: none;
+    }
+    
+    .carousel-rep{
+        padding-top: 0;  
+        width: 100%;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
+    }
+
+
+}
+
+// Remixes
+
+.youtube{
+    z-index: 1;
+    width: 800px;
+    height: 400px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px $danger;
+}
+
+@media screen and (max-width:991px){
+
+    .image-remixe {
+        display: none;
+    }
+
+    .youtube{
+        width: 95%;
+    }
+    
+
+    .remixe {
+        background-color: $dark !important;
+    }
+
+    .remixe  h2{
+        background-color: $black;
+        position: relative !important;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        right: 0 !important;
+    }
+   
+}
+
+// Original Tracks
+
+.youtube2{
+    width: 800px;
+    height: 400px;
+    box-shadow: -10px 10px 0px 0px $danger;
+}
+
+@media screen and (max-width:1500px){
+    .original-tracks h2{
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .youtube2{
+        position: relative !important;
+        right: 0 !important;
+        width: 95%;
+    }
+
+}
+
+// Contact
+
+.bg-black-bi{
+    background-image: linear-gradient(to bottom, $black 78%, $dark 15%);
+}
+
+.padding{
+    padding-top: 400px;
+}
+
+.form{
+    font-family: Orbitron, sans-serif;
+    max-width: 537px;
+    width: 100%;
+    height: 533px;
+}
+
+@media screen and (max-width:1500px){
+    .padding{
+        padding-top: 96px;
+    }
+}
+
+// ScrollPos
+
+#returnToHeader{
+    position: fixed;
+    bottom: 3rem;
+    transition: .3s;
+}
+
+@media screen and (max-width:991px){
+    #returnToHeader{
+        display: none;
+    }
+}

@@ -9,19 +9,18 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
-
 ###> phpunit/phpunit ###
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
 
-###> symfony/webpack-encore-bundle ###
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+##> symfony/vite.config.js ###
 /node_modules/
-/public/build/
+/public/assets/
 npm-debug.log
-yarn-error.log
-###< symfony/webpack-encore-bundle ###
+###< symfony/vite.config.js ###

@@ -1,0 +1,60 @@
+$light: #E5E5E5;
+$black: #000000;
+$dark: #212529;
+$danger: #5C0000;
+$darkred: #8B0000;
+
+$theme-colors: (
+  "light":   $light,
+  "black":   $black,
+  "dark":   $dark,
+  "danger": $danger,
+  "darkred": $darkred
+);
+
+$display-font-sizes: (
+  1: 8em,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$utilities: (
+
+  "width": (
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    )
+);
+
+$position-values: (
+  0: 0,
+  5: 5%,
+  10: 10%,
+  15: 15%,
+  25: 25%,
+  45: 45%,
+  50: 50%,
+  100: 100%
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+);

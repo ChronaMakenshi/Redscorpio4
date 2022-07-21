@@ -12,7 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\HttpFoundation\Request;
 
-class Redscorpio4Controller extends AbstractController
+class RedScorpio4Controller extends AbstractController
 {
     /**
      * @Route("/", name="redscorpio4")
