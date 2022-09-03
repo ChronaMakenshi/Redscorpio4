@@ -32,12 +32,6 @@ header h1 {
     text-shadow: 4px 4px 10px #FF0000;
 }
 
-@media (max-width: 655px) {  
-    header h1 {
-        font-size: calc(100% + 1vw + 1vh);
-    }
-  }
-
 // barre navigation
 // navigation bar
 
@@ -71,50 +65,21 @@ header nav li::before {
     transition: transform .3s ease;
 }
 
-@media screen and (max-width:991px){
-
-    .bg-lg-black {
-        background-color: $black;
-        margin-top: 10px;
-        z-index: 1;
-    }
-
-}
-
 // About
 
 .w-about {
     font-family: Orbitron, sans-serif;
     font-weight: normal;
-    width: 50%;
-    max-height: 560px;
+    width: 60%;
+    max-height: 700px;
     padding: 2%;
-    font-size: 0.9em;
+    font-size: 1.1em;
     box-shadow: 10px 10px $danger;
 }
 
 .img-about{
     max-width: 1903px;
     max-height: 584px;
-}
-
-@media screen and (max-width:1400px){
-
-    .w-about {
-        font-size: 0.7em;
-        box-shadow: none;
-    }
-
-}
-
-@media screen and (max-width:991px){
-
-    .w-about {
-        width: 88%;
-        font-size: 0.3em;
-        height: 280px;
-    }
-
 }
 
 // Carousel
@@ -130,29 +95,6 @@ header nav li::before {
     height: 848px;
 }
 
-
-@media screen and (max-width:768px){
-
-    .img-carousel{
-        display: none;
-    }
-    
-    .carousel-rep{
-        padding-top: 0;  
-        width: 100%;
-    }
-
-    .carousel-control-prev {
-        display: none;
-    }
-
-    .carousel-control-next {
-        display: none;
-    }
-
-
-}
-
 // Remixes
 
 .youtube{
@@ -163,51 +105,12 @@ header nav li::before {
     box-shadow: 10px 10px $danger;
 }
 
-@media screen and (max-width:991px){
-
-    .image-remixe {
-        display: none;
-    }
-
-    .youtube{
-        width: 95%;
-    }
-    
-
-    .remixe {
-        background-color: $dark !important;
-    }
-
-    .remixe  h2{
-        background-color: $black;
-        position: relative !important;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        right: 0 !important;
-    }
-   
-}
-
 // Original Tracks
 
 .youtube2{
     width: 800px;
     height: 400px;
     box-shadow: -10px 10px 0px 0px $danger;
-}
-
-@media screen and (max-width:1500px){
-    .original-tracks h2{
-        margin: 0 !important;
-        text-align: center;
-    }
-
-    .youtube2{
-        position: relative !important;
-        right: 0 !important;
-        width: 95%;
-    }
-
 }
 
 // Contact
@@ -227,22 +130,116 @@ header nav li::before {
     height: 533px;
 }
 
-@media screen and (max-width:1500px){
-    .padding{
-        padding-top: 96px;
-    }
-}
-
 // ScrollPos
 
 #returnToHeader{
     position: fixed;
-    bottom: 3rem;
+    bottom: 5rem;
     transition: .3s;
 }
 
+// media query
+
+
+@media (max-width: 655px) {  
+    header h1 {
+        font-size: calc(100% + 1vw + 1vh);
+    }
+  }
+
+@media screen and (max-width:768px){
+
+    .img-carousel{
+        display: none;
+    }
+    
+    .carousel-rep{
+        padding-top: 0;  
+        width: 100%;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
+    }
+}
+
 @media screen and (max-width:991px){
+
+    .bg-lg-black {
+        background-color: $black;
+        margin-top: 10px;
+        z-index: 1;
+    }
+
+    .w-about {
+        position: relative !important;
+        right: 0 !important;
+        margin: 0 !important;
+        width: 98%;
+        max-height: 790px;
+    }
+
+    .img-about{
+       display: none;
+    }
+
+    .image-remixe {
+        display: none;
+    }
+
+    .youtube{
+        width: 90%;
+        box-shadow: none;
+    }
+
+    .youtube2 {
+        width: 90%;
+        box-shadow: none;
+    }
+    
+    .remixe {
+        background-color: $dark !important;
+    }
+
+    .remixe  h2{
+        background-color: $black;
+        position: relative !important;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        right: 0 !important;
+    }
+
     #returnToHeader{
         display: none;
     }
 }
+
+@media screen and (max-width:1400px){
+
+    .w-about {
+        font-size: 0.75em;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width:1500px){
+    .original-tracks h2{
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .youtube2{
+        position: relative !important;
+        right: 0 !important;
+    }
+
+    .padding{
+        padding-top: 96px;
+    }
+
+}
+

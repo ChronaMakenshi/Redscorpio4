@@ -55,7 +55,7 @@
 				<a href="https://www.youtube.com/user/MtChronaMakenshi"><img class="me-5 w-50" width="50" height="50" src="{{ asset('image/youtube.svg') }}" alt="youtube"></a>
 				<a href="https://soundcloud.com/redscorpio4"><img class="me-5 w-50" width="80" height="50" src="{{ asset('image/soundcould.svg') }}" alt="soundcould"></a>
 			</div>
-			<div class="position-relative mb-6" id="About">
+			<div class="position-relative  mb-6" id="About">
 				<article class="text-white end-5 h-100 position-absolute w-about bg-black m-2">
 					<p>We’re going to talk about a shy, unsure and secretive electronic music composer.</p>
 					<p>RedScorpio4 was born in France in the late 80’s and raised by a musician family, listening to punk, rock, metal and celtic music. They got quickly a real passion for electronic music (The 90’s hit something) and started to touch music composition at the age of 12 by using the Codemaster software Music 2000.</p>
@@ -125,7 +125,7 @@
 		{# end of the carousel #}
 		{# start of the youtube #}
 		<section>
-			<div class="remixe bg-black my-6 position-relative pt-5">
+			<div class="remixe bg-black my-6 position-relative pt-5" id="Remixes">
 				<h2 class="text-white text-center position-absolute end-5 top-5">Remixes</h2>
 				<div class="d-flex justify-content-center">
 					<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrNXWRVge-YjSXPmOu9If4WSOzj5V5JKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
@@ -144,11 +144,11 @@
 		{# end of the youtubes #}
 		{# start of the contact  #}
 		<section>
-			<div class="padding  mt-lg-0" id="Contact">
+			<div class="padding  mt-lg-0">
 				<div class="bg-black-bi">
 					<h2 class="text-white py-5 text-fonts text-center">Contact</h2>
 					<div class="d-flex align-items-center flex-column-reverse justify-content-lg-evenly flex-lg-row">
-						<div class="bg-danger form col-lg-3 col-md-8 col-12 mb-5">
+						<div class="bg-danger form col-lg-3 col-md-8 col-12 mb-5" id="Contact">
 							{% for message in app.flashes('success') %}
 								<div class="alert alert-success bg-white text-center">
 									{{ message }}
